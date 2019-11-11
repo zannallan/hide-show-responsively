@@ -21,32 +21,51 @@ img {
   display: block;
 }
 
-.dino {
+.dino-wrap {
   display: flex;
+  flex-wrap: wrap;
 }
 
-.dino:nth-child(2) {
-  display:  none;
-}
-
-.dino:nth-child(4) {
+.dino:nth-child(2), .dino:nth-child(4) {
   display:  none;
 }
 
 @media only screen and (min-width: 25em) {
 
+  .dino {
+    width: 50%;
+  }
 
+  .dino:nth-child(2), .dino:nth-child(4) {
+    display: block;
+  }
 
 }
 
 @media only screen and (min-width: 38em) {
 
+  .dino {
+    width: 33.33%;
+  }
 
+  .dino:first-child {
+    display: none;
+  }
+
+  .dino:nth-child(2), .dino:nth-child(4) {
+    display: inline;
+  }
 
 }
 
 @media only screen and (min-width: 60em) {
 
+  .dino {
+    width: 25%;
+  }
 
+  .dino:nth-child(2), .dino:nth-child(4), .dino:first-child {
+    display: inline;
+  }
 
 }
