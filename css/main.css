@@ -27,7 +27,7 @@ img {
 }
 
 .dino:nth-child(2), .dino:nth-child(4) {
-  display:  none;
+  display: none;
 }
 
 @media only screen and (min-width: 25em) {
